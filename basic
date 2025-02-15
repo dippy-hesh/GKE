@@ -31,4 +31,4 @@ rollout to specifi or old version.
 kubectl rollout undo deployment/my-first-deployment --to-revision=1
 
 
-
+custer ip: it is used for internal communication between application.
