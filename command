@@ -52,6 +52,9 @@ gcloud compute firewall-rules create fw-rule-gke-node-port \
 # List Firewall Rules
 gcloud compute firewall-rules list    
 -----------------------------------------------------------------------------------------------------------------------
+# GKE Cluster Kubernetes Service Full DNS Name format
+<svc>.<ns>.svc.cluster.local
+--------------------------------------------------------------------------------------------------------------------
 
   
 
