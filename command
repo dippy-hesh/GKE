@@ -9,6 +9,8 @@ kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
   # Expose Pod as a Service
 kubectl expose pod <Pod-Name>  --type=LoadBalancer --port=80 --name=<Service-Name>
 kubectl expose pod my-first-pod  --type=LoadBalancer --port=80 --name=my-first-service
+when you create a service for clusterip no need to specify in the command
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 logs for pods
 
