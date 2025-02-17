@@ -42,8 +42,17 @@ kubectl delete pod my-first-pod
 # Get all Objects in default namespace
 kubectl get all
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  
-  
+gcloud compute firewall-rules create fw-rule-gke-node-port \
+    --allow tcp:NODE_PORT
+
+# Replace NODE_PORT
+gcloud compute firewall-rules create fw-rule-gke-node-port \
+    --allow tcp:30080   
+
+# List Firewall Rules
+gcloud compute firewall-rules list    
+-----------------------------------------------------------------------------------------------------------------------
+
   
 
   
