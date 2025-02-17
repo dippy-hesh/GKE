@@ -32,3 +32,6 @@ kubectl rollout undo deployment/my-first-deployment --to-revision=1
 
 
 custer ip: it is used for internal communication between application.
+nodeport i used for test you application by external user we cant use it for producation.
+headless services we have to use port and targetport as same in spec you should mention clusterip: none .
+to test headless you have to create a curl pod.
