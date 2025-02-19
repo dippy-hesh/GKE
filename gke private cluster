@@ -1,0 +1,20 @@
+internet connection to the cluster is not allowed you can access outgoing using cloud nat.
+to create a cloud nat go to networking seeting --- cloud nat 
+Authorized Network mean the specified netwrok can only access your cluster
+Enable control plane authorized networks: CHECKED
+CLICK ON ADD AUTHORIZED NETWORK
+NAME: MY-NETWORK-1
+NETWORK: 10.10.10.0/24
+Click on DONE
+Click on SAVE CHANGES
+
+
+kuberents storage is managed by persistance volume . persistance volume is backend by google persistance disk . you can increase and decrease
+and delete the volume by using yml and gclod command as well. when you create this persistance volume then persistance disk will be created automatically.
+when you delete this persistance volume then persistance disk will be get deleted automatically
+if you want to keep you persistance disk remanins when you delete your persistance voulume you can do that.
+csi contrainer storage interface to have persistance volume you have enable this csi srive 
+csi and pdcsi are configured by using storage class
+persistance volume is the storage for kubernets cluster.
+persistance volume class is the heart of the storage it request for size access mode 
+persistance volume claim should be in namespace    persistance volume and storage are not in namespace
